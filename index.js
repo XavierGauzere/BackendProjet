@@ -12,12 +12,12 @@ const docRoute = require('./src/routes/notes.route');
 
 
 // Définition d'un fichier de sortie swagger
-//const swaggerUi = require('swagger-ui-express');
-//const swaggerFile = require('./src/middleware/swagger-output.json');
+const swaggerUi = require('swagger-ui-express');
+const swaggerFile = require('./src/middleware/swagger-output.json');
 const fs = require('fs'); // Bibliothèque pour gestion de fichier (lecture/écriture)
 const exp = require('constants');
 
-//app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+app.use('/api/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
 // Initialisation et configuration
 //Init environment
