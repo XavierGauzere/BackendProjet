@@ -26,9 +26,8 @@ const doc = {
 
 const outputFile = './src/middleware/swagger-output.json';
 const routes = [
-  './src/routes/film.route.js', 
-  './src/routes/serie.route.js',
-  './src/routes/notes.route.js'];
+  'index.js', 
+];
 console.log(routes);
 
 swaggerAutogen(outputFile, routes, doc).then(() => {

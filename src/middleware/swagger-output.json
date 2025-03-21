@@ -21,12 +21,20 @@
     "http"
   ],
   "paths": {
-    "/": {
+    "/films": {
       "get": {
-        "description": "",
+        "summary": "Récupérer tous les films",
+        "description": "Renvoie la liste de tous les films disponibles.",
+        "tags": ["Films"],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Liste des films",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Film"
+              }
+            }
           },
           "500": {
             "description": "Internal Server Error"
@@ -45,7 +53,7 @@
         }
       }
     },
-    "/{id}": {
+    "/films/{id}": {
       "get": {
         "description": "",
         "parameters": [
@@ -104,7 +112,7 @@
         }
       }
     },
-    "/filter/{nom}": {
+    "/films/filter/{nom}": {
       "get": {
         "description": "",
         "parameters": [

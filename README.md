@@ -62,15 +62,14 @@ git push -u origin main
 ```
 ### 2. Fichiers gitignore et readme
 #### Gitignore
-Afin d’éviter de pousser sur le serveur des fichiers inutiles on peut je créé un fichier .gitignore.
+Afin d’éviter de pousser sur le serveur des fichiers inutiles je créé un fichier .gitignore.
 
 #### Readme
 Création du Readme pour expliquer tout le développement du projet
 
 ### 3. Linting
 Installation de Linting : 
-Un linter est un outil d'analyse de code statique utilisé pour signaler les erreurs
-de programmation, les bogues, les erreurs de style et les constructions
+Un linter est un outil d'analyse de code statique utilisé pour signaler les erreurs de programmation, les bogues, les erreurs de style et les constructions
 suspectes.
 
 - Installation du package eslint :
@@ -181,7 +180,7 @@ Importation du module dotenv
 ```js 
 const dotenv = require('dotenv');
 ```
-Initialisation et congiguration 
+Initialisation et configuration 
 ```js 
 //Init environment
 dotenv.config();
@@ -230,7 +229,7 @@ npm install mysql
 
 
 ### 8. Création des fichiers routes
-- Création d'un dossier route dans lequel j'y créé tous les scrips de route
+- Création d'un dossier route dans lequel j'y créé tous les scripts de route
 
 Exemple : script film.route.js dans lequel de défini toutes les routes
 ```js
@@ -280,7 +279,7 @@ const docRoute = require('./src/routes/notes.route');
 ### 8. Création des fichiers controllers
 - Création des fichiers des controllers dans le dossier controller
 
-Exemple : film.controller.js dans lequel de défini toutes les fonctions pour effectuer les opérations du CRUD sur les films avec les messages de réponse
+Exemple : film.controller.js dans lequel on défini toutes les fonctions à appeler au model pour effectuer les opérations du CRUD sur les films avec les messages de réponse
 
 ```js
 // Importation du modèle pour la table film

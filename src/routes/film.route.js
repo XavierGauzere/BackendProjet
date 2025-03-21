@@ -22,7 +22,7 @@ const {
  *       - Films
  *     responses:
  *       200:
- *         description: Succès - Liste des films récupérée
+ *         description: Succès - Liste des films
  *         content:
  *           application/json:
  *             schema:
@@ -54,6 +54,7 @@ const {
  *                         description: Année de sortie du film.
  *                         example: 1994
  */
+
 router.get('/', getAllFilms); // GET localhost:8081/films
 
 //Pour afficher un film via son id

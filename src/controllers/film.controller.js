@@ -4,8 +4,9 @@ const filmModel = require('../models/film.model');
 // Récupérer l'ensemble des films
 getAllFilms = (request, response) => {
     filmModel.getAllFilms((error, data) => { // Demande des données au modèle film
+        // Gestion des erreurs de données retournées
         if (error)
-            response.status(500).send({ // Gestion des erreurs de données retournées
+            response.status(500).send({ 
                 message: 
                     error.message || "Une erreur est survenue en essayant de récupérer la table film."
             });
